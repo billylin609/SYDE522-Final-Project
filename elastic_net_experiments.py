@@ -24,7 +24,8 @@ FEATURE_SETS = {
 
 # Severson et al. (2019) Table 1 as (RMSE cycles, mean % error) for
 # train, primary test, primary test without the outlier cell, secondary test.
-# UNVERIFIED: written from memory because the paper could not be fetched; check against the paper.
+# Checked against Table 1 of the paper (Nature Energy 4, p. 386). The paper's 'full' model also leaves
+# out four cells whose temperature probes lost contact (Fig. 3 caption); we keep them.
 PAPER_TABLE1 = {
     'variance': [(103, 14.1), (138, 14.7), (138, 13.2), (196, 11.4)],
     'discharge': [(76, 9.8), (91, 13.0), (86, 10.1), (173, 8.6)],
